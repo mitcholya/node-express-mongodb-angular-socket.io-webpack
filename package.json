@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "npm start & webpack-dev-server --progress --colors",
-    "build": "webpack --progress --colors --config webpack.prod.config.js"
+    "postinstall": "webpack --config ./webpack.prod.config.js --progress --colors",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Aleksandr Shcherbatov",
